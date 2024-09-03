@@ -15,32 +15,35 @@
             <!-- header -->
             <header>
                 <div class="container">
-                    HEADER
+                    <h1>
+                     Vue Email List
+                    </h1>
                 </div>
             </header>
-            <!-- /header -->
 
             <!-- main -->
             <main>
                 <div class="container">
-                    <h1>
-                        {{ message }}
-                    </h1>
+                    <ul>
+                        <li v-for="(email, index) in emails">
+                            {{ email }}
+                        </li>
+                        
+                    </ul>
                 </div>
             </main>
-            <!-- /main -->
 
             <!-- footer -->
             <footer>
                 <div class="container">
-                    FOOTER
+                   
                 </div>
             </footer>
-            <!-- /footer -->
 
         </div>
 
         <!-- JS -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <script type="text/javascript" src="js/scripts.js"></script>
 
