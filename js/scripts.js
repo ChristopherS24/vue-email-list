@@ -7,6 +7,8 @@ const app = createApp({
         };
     },
     created() {
+        
+        for (let i = 0; i < 10; i++) {
 
         axios
             .get('https://flynn.boolean.careers/exercises/api/random/mail')
@@ -16,4 +18,5 @@ const app = createApp({
                 this.emails.push(email);
             });
     }
+        }
 }).mount('#app');
